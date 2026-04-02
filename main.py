@@ -1,6 +1,8 @@
 import streamlit as st
 from functions import open_wanted_file, write_wanted_file, open_completed_file, write_completed_file
+from bg_func import set_background
 
+set_background("img.png")
 wanted_items = open_wanted_file()
 completed_items = open_completed_file()
 
